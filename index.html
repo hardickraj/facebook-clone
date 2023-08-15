@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d73a35e4e.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" href="assets/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook by Hardick Raj</title>
+</head>
+<body class="bg-gray-200">
+    <header class="bg-white py-2 px-4 flex justify-between items-center drop-shadow-sm w-full fixed z-50 top-0">
+
+        <!-- logo and search bar-->
+        <div class="flex space-x-2 items-center w-[330px]">
+            <a href="javascript:void(0)" id="logo"><i class="fa-brands fa-facebook text-[2.6rem] text-blue-500"></i></a>
+            <div class="px-3 xl:px-4 bg-gray-100 py-2 rounded-full cursor-pointer">
+                <i class="fa-solid fa-magnifying-glass mr-0 xl:mr-1 text-gray-600"></i>
+                <input type="search" name="" id="" class="hidden xl:inline bg-transparent outline-none placeholder:text-gray-600 " placeholder="Search Facebook">
+            </div>
+        </div>
+        <!-- logo and search bar end-->
+
+        <!-- navigations -->
+        <ul class="hidden sm:flex space-x-2 min-w-0 max-w-[680px] w-1/2 mx-auto">
+            <li class="inline-block w-1/4">
+                <a href="" class="text-blue-500 text-xl w-full inline-block text-center py-2 rounded-md relative" title="Home"><i class="fa-solid fa-house"></i><span class="w-full h-[3px] bg-blue-500 rounded-t-sm block absolute -bottom-1 left-0"></span></a>
+            </li>
+            <li class="inline-block w-1/4">
+                <a href="" class="text-gray-600 text-xl w-full inline-block text-center py-2 rounded-md hover:bg-gray-200 " title="Friends"><i class="fa-solid fa-user-group"></i></a>
+            </li>
+            <li class="inline-block w-1/4">
+                <a href="" class="text-gray-600 text-xl w-full inline-block text-center py-2 rounded-md hover:bg-gray-200 " title="Groups"><i class="fa-solid fa-users"></i></a>
+            </li>
+            <li class="inline-block w-1/4">
+                <a href="" class="text-gray-600 text-xl w-full inline-block text-center py-2 rounded-md hover:bg-gray-200 " title="Gaming"><i class="fa-solid fa-dice"></i></a>
+            </li>
+        </ul>
+        <!-- navigations ends -->
+
+        <!-- options -->
+        <div class="flex items-center space-x-3 w-[330px] justify-end">
+            <button class="text-xl bg-neutral-200 block w-10 h-10 rounded-full hover:bg-neutral-300" title="Menu"><i class="fa-solid fa-bars hidden lg:block"></i><i class="fa-solid fa-plus lg:hidden"></i></button>
+            <button class="text-xl bg-neutral-200 block w-10 h-10 rounded-full hover:bg-neutral-300" title="Messenger"><i class="fa-brands fa-facebook-messenger"></i></button>
+            <button class="text-xl bg-neutral-200 block w-10 h-10 rounded-full hover:bg-neutral-300" title="Notifications"><i class="fa-solid fa-bell"></i></button>
+            <button class="block w-10 h-10 hover:brightness-95" title="Account"><img class="rounded-full" src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo"></button>
+        </div>
+        <!-- options ends -->
+    </header>
+
+    <main class="sm:px-2 flex justify-between w-full h-screen">
+
+        <div id="navigation" class="hidden lg:flex flex-col max-w-[360px] min-w-[280px] flex-shrink pt-20 overflow-hidden">
+            <div class="grow">
+                <!-- navigation start -->
+                <ul>
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Hardick Raj</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/icons/friends.png" alt="icon" class="rounded-full w-9">
+                        <h4 class="font-medium">Friends</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/icons/marketplace.png" alt="icon" class="rounded-full w-9">
+                        <h4 class="font-medium">Marketplace</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/icons/most-recent.png" alt="icon" class="rounded-full w-9">
+                        <h4 class="font-medium">Most Recents</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/icons/groups.png" alt="icon" class="rounded-full w-9">
+                        <h4 class="font-medium">Groups</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/icons/watch.png" alt="icon" class="rounded-full w-9">
+                        <h4 class="font-medium">Watch</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/icons/memories.png" alt="icon" class="rounded-full w-9">
+                        <h4 class="font-medium">Memories</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/icons/saved.png" alt="icon" class="rounded-full w-9">
+                        <h4 class="font-medium">Saved</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/icons/pages.png" alt="icon" class="rounded-full w-9">
+                        <h4 class="font-medium">Pages</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <div class=" bg-gray-300 flex items-center justify-center w-9 h-9 rounded-full"><i class="fa-solid fa-chevron-down"></i></div>
+                        <h4 class="font-medium">See More</h4>
+                    </a></li>
+                </ul>
+                <!-- navigation ends -->
+
+                <div class="block w-full h-px bg-gray-400 my-2 mx-2"></div>
+
+                <!-- shortcuts -->
+                <div id="shortcuts" class="group">
+                    <div class="flex justify-between items-center">
+                        <h2 class="font-semibold text-lg text-gray-500 ml-2">Your Shortcuts</h2>
+                        <a href="" class="text-blue-400 px-2 py-2 rounded invisible group-hover:visible hover:bg-gray-300">Edit</a>
+                    </div>
+
+                    <ul class="mt-2">
+                        <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                            <img src="assets/icons/chess.png" alt="icon" class="rounded-lg w-9">
+                            <h4 class="font-medium">Chess</h4>
+                        </a></li>
+
+                        <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                            <img src="assets/icons/ludo.png" alt="icon" class="rounded-lg w-9">
+                            <h4 class="font-medium">Ludo King</h4>
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- shortcuts end-- -->
+            </div>
+            
+
+            <!-- footer -->
+            <div id="footer" class="grow-0">
+                <div class="text-sm text-gray-500 space-x-">
+                    <a href="" class="hover:underline">Privacy</a> &bull;
+                    <a href="" class="hover:underline">Terms</a> &bull;
+                    <a href="" class="hover:underline">Advertising</a> &bull;
+                    <a href="" class="hover:underline">Ad choices</a> &bull;
+                    <a href="" class="hover:underline">Cookies</a> &bull;
+                    <a href="" >More</a> &bull;
+                    <p class="inline">Created By <a href="https://rajhardick.ezyro.com" class="text-blue-500 font-medium">Hardick Raj</a> &copy; 2022</p>
+                </div>
+            </div>
+            <!-- footer end-- -->
+        </div>
+
+        <!-- feed -->
+        <div id="feed" class="px-0 md:px-8 min-w-0 max-w-[712px] mx-auto flex-shrink  pt-20 overflow-y-auto">
+
+            <!-- story section start -->
+            <div class="bg-white py-1 rounded-lg shadow-md">
+
+                <!-- options -->
+                <ul class="space-x-2 text-center px-4">
+                    <li class="inline-block w-[31%]">
+                        <a href="" class="text-blue-500 font-medium w-full  py-3 rounded-md relative" >Stories</a>
+                    </li>
+
+                    <li class="inline-block w-[31%]">
+                        <a href="" class="text-gray-600 font-medium w-full  py-3 inline-block rounded-md hover:bg-gray-200 ">Reels</a>
+                    </li>
+
+                    <li class="inline-block w-[31%]">
+                        <a href="" class="text-gray-600 font-medium w-full  py-3 inline-block rounded-md hover:bg-gray-200 ">Rooms</a>
+                    </li>
+                </ul>
+                <!-- options end -->
+
+                <!-- stories start -->
+                <div class="py-3 border-t relative">
+
+                    <div id="stories" class="px-4 flex flex-nowrap overflow-x-auto w-full items-center space-x-2 snap-x">
+
+                        <div class="w-28 h-[200px] bg-white flex-shrink-0 snap-center relative cursor-pointer drop-shadow shadow-black mb-1 rounded-xl hover:brightness-90">
+                            <div class="relative before:rounded-xl before:bg-gradient-to-b before:from-transparent before:to-gray-800 before:opacity-20 before:w-full before:h-full before:absolute before:z-10">
+                                <img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-full h-[152px] object-cover rounded-t-xl brightness-95">
+                                <div class="absolute bottom-0 right-1/2 translate-x-1/2 translate-y-1/2 z-10"><i class="fa-solid fa-plus bg-blue-500 text-white text-lg w-10 h-10 rounded-full flex items-center justify-center border-4 border-white"></i></div>
+                            </div>
+                            <div class="text-black text-sm font-semibold p-2 absolute bottom-0 z-10"><p>Create Story</p></div>
+                        </div>
+    
+                        <div class="w-28 h-[200px] flex-shrink-0 snap-center relative cursor-pointer drop-shadow mb-1 rounded-xl hover:brightness-90 before:rounded-xl before:bg-gradient-to-b before:from-transparent before:to-gray-800 before:opacity-20 before:w-full before:h-full before:absolute before:z-10">
+                            <img src="assets/images/elizabeth-3.13b98729.jpg" alt="users profile photo" class="w-full h-full object-cover rounded-xl brightness-95">
+                            <div class="absolute top-0 left-0 p-3"><img src="assets/images/elizabeth.a7d537b9.jpg" alt="users profile photo" class="w-10 h-10 rounded-full border-4 border-blue-400"></div>
+                            <div class="text-white text-sm font-semibold p-2 absolute bottom-0 z-10"><p>Elizabeth Olsen</p></div>
+                        </div>
+    
+                        <div class="w-28 h-[200px] flex-shrink-0 snap-center relative cursor-pointer drop-shadow mb-1 rounded-xl hover:brightness-90 before:rounded-xl before:bg-gradient-to-b before:from-transparent before:to-gray-800 before:opacity-20 before:w-full before:h-full before:absolute before:z-10">
+                            <img src="assets/images/andrew-2.f959b543.jpg" alt="story photo" class="w-full h-full object-cover rounded-xl brightness-95">
+                            <div class="absolute top-0 left-0 p-3"><img src="assets/images/andrew.fe7a1f40.jpg" alt="users profile photo" class="w-10 h-10 rounded-full border-4 border-blue-400"></div>
+                            <div class="text-white text-sm font-semibold p-2 absolute bottom-0 z-10"><p>Andrew Garfield</p></div>
+                        </div>
+    
+                        <div class="w-28 h-[200px] flex-shrink-0 snap-center relative cursor-pointer drop-shadow mb-1 rounded-xl hover:brightness-90 before:rounded-xl before:bg-gradient-to-b before:from-transparent before:to-gray-800 before:opacity-20 before:w-full before:h-full before:absolute before:z-10">
+                            <img src="assets/images/tara-2.800d5e5c.jpg" alt="story photo" class="w-full h-full object-cover rounded-xl brightness-95">
+                            <div class="absolute top-0 left-0 p-3"><img src="assets/images/tara.1988535e.jpg" alt="users profile photo" class="w-10 h-10 rounded-full border-4 border-blue-400"></div>
+                            <div class="text-white text-sm font-semibold p-2 absolute bottom-0 z-10"><p>Tara Sutaria</p></div>
+                        </div>
+    
+                        <div class="w-28 h-[200px] flex-shrink-0 snap-center relative cursor-pointer drop-shadow mb-1 rounded-xl hover:brightness-90 before:rounded-xl before:bg-gradient-to-b before:from-transparent before:to-gray-800 before:opacity-20 before:w-full before:h-full before:absolute before:z-10">
+                            <img src="assets/images/homelander-2.eb0e1d81.jpg" alt="story photo" class="w-full h-full object-cover rounded-xl brightness-95">
+                            <div class="absolute top-0 left-0 p-3"><img src="assets/images/antony.4aed527a.jpg" alt="users profile photo" class="w-10 h-10 rounded-full border-4 border-blue-400"></div>
+                            <div class="text-white text-sm font-semibold p-2 absolute bottom-0 z-10"><p>Antony Starr</p></div>
+                        </div>
+    
+                        <div class="w-28 h-[200px] flex-shrink-0 snap-center relative cursor-pointer drop-shadow mb-1 rounded-xl hover:brightness-90 before:rounded-xl before:bg-gradient-to-b before:from-transparent before:to-gray-800 before:opacity-20 before:w-full before:h-full before:absolute before:z-10">
+                            <img src="assets/images/virat-2.63ba9c2a.jpg" alt="story photo" class="w-full h-full object-cover rounded-xl brightness-95">
+                            <div class="absolute top-0 left-0 p-3"><img src="assets/images/virat.e2b3026a.jpg" alt="users profile photo" class="w-10 h-10 rounded-full border-4 border-blue-400"></div>
+                            <div class="text-white text-sm font-semibold p-2 absolute bottom-0 z-10"><p>Virat Kohli</p></div>
+                        </div>
+    
+                        <div class="w-28 h-[200px] flex-shrink-0 snap-center relative cursor-pointer drop-shadow mb-1 rounded-xl hover:brightness-90 before:rounded-xl before:bg-gradient-to-b before:from-transparent before:to-gray-800 before:opacity-20 before:w-full before:h-full before:absolute before:z-10">
+                            <img src="assets/images/krysten-2.4d99a4a4.jpg" alt="story photo" class="w-full h-full object-cover rounded-xl brightness-95">
+                            <div class="absolute top-0 left-0 p-3"><img src="assets/images/krysten.29ab3e93.jpg" alt="users profile photo" class="w-10 h-10 rounded-full border-4 border-blue-400"></div>
+                            <div class="text-white text-sm font-semibold p-2 absolute bottom-0 z-10"><p>Krysten Ritter/p></div>
+                        </div>
+    
+                        <div class="w-28 h-[200px] flex-shrink-0 snap-center relative cursor-pointer drop-shadow mb-1 rounded-xl hover:brightness-90 before:rounded-xl before:bg-gradient-to-b before:from-transparent before:to-gray-800 before:opacity-20 before:w-full before:h-full before:absolute before:z-10">
+                            <img src="assets/images/salman-2.232bb229.jpg" alt="story photo" class="w-full h-full object-cover rounded-xl brightness-95">
+                            <div class="absolute top-0 left-0 p-3"><img src="assets/images/salman.28d63c87.jpg" alt="users profile photo" class="w-10 h-10 rounded-full border-4 border-blue-400"></div>
+                            <div class="text-white text-sm font-semibold p-2 absolute bottom-0 z-10"><p>Selmon Bhoi</p></div>
+                        </div>
+                        
+                    </div>
+
+                    <button id="slideright" class="w-12 h-12 bg-white text-gray-600 text-xl p-4 flex items-center justify-center rounded-full z-10 hover:bg-gray-200 absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <button id="slideleft" class="hidden w-12 h-12 bg-white text-gray-600 text-xl p-4 items-center justify-center rounded-full z-10 hover:bg-gray-200 absolute left-0 top-1/2 translate-x-1/2 -translate-y-1/2">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    
+                </div>
+                <!-- stories ends -->
+
+            </div>
+            <!-- story section end -->
+
+            <!-- create post section start -->
+            <div class="bg-white py-1 px-4 mt-4 rounded-lg shadow-md">
+
+                <div class="flex items-center space-x-2 my-3">
+                    <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-10 rounded-full"></a>
+                    <a href="" class="bg-gray-200 text-gray-600 text-lg py-2 px-3 rounded-full w-full hover:bg-gray-300">What's on your mind, Hardick?</a>
+                </div>
+                
+                <ul class="text-center flex py-2 border-t">
+                    <li class="w-1/2 xs:w-1/3 inline-block">
+                        <a href="" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-solid fa-video mr-2 text-2xl text-rose-500"></i>Live Video</a>
+                    </li>
+                    
+                    <li class="w-1/2 xs:w-1/3 inline-block">
+                        <a href="" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-solid fa-photo-film mr-2 text-2xl text-green-500"></i>Photo/Video</a>
+                    </li>
+
+                    <li class="hidden xs:inline-block w-1/3">
+                        <a href="" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-face-laugh-beam mr-2 text-2xl text-yellow-500"></i>Feeling/Activity</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- create post section end -->
+
+            <!-- post block start -->
+            <div class="bg-white py-1 mt-4 rounded-lg shadow-md">
+
+                <!-- poster info start -->
+                <div class="flex items-center justify-between px-4 py-2">
+                    
+                    <div class="flex items-center space-x-2">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-10 rounded-full"></a>
+                        <div>
+                            <h4 class="font-semibold hover:underline"><a href="">Hardick Raj</a></h4>
+                            <p class="text-sm text-gray-600">14/08/2023 &bull; <i class="fa-solid fa-earth-asia"></i></p>
+                        </div>
+                    </div>
+    
+                    <a href="" class="text-gray-500 text-xl flex items-center justify-center w-9 h-9 rounded-full hover:bg-gray-200">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </a>
+
+                </div>
+                <!-- poster info ends -->
+
+                <!-- actual post starts -->
+                <div class="px-4">
+                    <p>Added a little life to like button with javascript.</p>
+                    <ul class="list-disc list-inside">
+                        <li>Upon clicking the like button, it will play a sound.</li>
+                        <li>The color will change from gray to blue and vice-versa.</li>
+                        <li>The text will change from <em>'like'</em> to <em>'liked'</em> and vice-versa.</li>
+                    </ul>
+                    <!-- <img src="" alt="post image" class="w-full mt-2"> -->
+                </div>
+                <!-- actual post ends -->
+
+                <!-- post engagement info starts -->
+                <div class="flex justify-between items-center px-4 py-2 text-gray-500">
+                    <div>
+                        <a href="" class="text-blue-500 text-lg"><i class="fa-solid fa-thumbs-up"></i></a>
+                        <a href="" class="hover:underline">6.9k</a>
+                    </div>
+
+                    <div>
+                        <a href="" class="hover:underline">69 comments</a>
+                        <a href="" class="hover:underline">96 shares</a>
+                    </div>
+                </div>
+                <!-- post engagement info ends -->
+
+                <!-- post engagement buttons start -->
+                <div>
+                    <ul class="text-center flex py-1 px-4 border-y">
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="likebtn text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-thumbs-up mr-2 text-xl"></i>Like</a>
+                        </li>
+                        
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-message mr-2 text-xl"></i>Comment</a>
+                        </li>
+    
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-share-from-square mr-2 text-xl"></i>Share</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- post engagement buttons end-- -->
+
+                <!-- comment writing on post block start -->
+                <div class="px-4">
+                    <div class="flex items-center space-x-2 my-3">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-8 rounded-full"></a>
+                        <div class="bg-gray-200 text-gray-600 py-1 px-3 rounded-full w-full flex items-center">
+                            <input type="text" name="" id="" placeholder="Write a comment..." class="w-full bg-transparent outline-none placeholder:text-gray-600">
+                            <div class="flex-shrink-0">
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-user-ninja"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-face-smile"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-camera"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-robot"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-ghost"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- comment writing on post block ends -->
+
+            </div>
+            <!-- post block end -->
+
+            <!-- post block start -->
+            <div class="bg-white py-1 mt-4 rounded-lg shadow-md">
+
+                <!-- poster info start -->
+                <div class="flex items-center justify-between px-4 py-2">
+                    
+                    <div class="flex items-center space-x-2">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-10 rounded-full"></a>
+                        <div>
+                            <h4 class="font-semibold hover:underline"><a href="">Hardick Raj</a></h4>
+                            <p class="text-sm text-gray-600">12/08/2023 &bull; <i class="fa-solid fa-earth-asia"></i></p>
+                        </div>
+                    </div>
+    
+                    <a href="" class="text-gray-500 text-xl flex items-center justify-center w-9 h-9 rounded-full hover:bg-gray-200">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </a>
+
+                </div>
+                <!-- poster info ends -->
+
+                <!-- actual post starts -->
+                <div class="px-4">
+                    <p>Fixed the javascript code error where story scrolling on button click was not working.</p>
+                    <p>Now it is working completly fine.</p>
+                </div>
+                <!-- actual post ends -->
+
+                <!-- post engagement info starts -->
+                <div class="flex justify-between items-center px-4 py-2 text-gray-500">
+                    <div>
+                        <a href="" class="text-blue-500 text-lg"><i class="fa-solid fa-thumbs-up"></i></a>
+                        <a href="" class="hover:underline">6.9k</a>
+                    </div>
+
+                    <div>
+                        <a href="" class="hover:underline">69 comments</a>
+                        <a href="" class="hover:underline">96 shares</a>
+                    </div>
+                </div>
+                <!-- post engagement info ends -->
+
+                <!-- post engagement buttons start -->
+                <div>
+                    <ul class="text-center flex py-1 px-4 border-y">
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="likebtn text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-thumbs-up mr-2 text-xl"></i>Like</a>
+                        </li>
+                        
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-message mr-2 text-xl"></i>Comment</a>
+                        </li>
+    
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-share-from-square mr-2 text-xl"></i>Share</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- post engagement buttons end-- -->
+
+                <!-- comment writing on post block start -->
+                <div class="px-4">
+                    <div class="flex items-center space-x-2 my-3">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-8 rounded-full"></a>
+                        <div class="bg-gray-200 text-gray-600 py-1 px-3 rounded-full w-full flex items-center">
+                            <input type="text" name="" id="" placeholder="Write a comment..." class="w-full bg-transparent outline-none placeholder:text-gray-600">
+                            <div class="flex-shrink-0">
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-user-ninja"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-face-smile"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-camera"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-robot"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-ghost"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- comment writing on post block ends -->
+
+            </div>
+            <!-- post block end -->
+
+            <!-- post block start -->
+            <div class="bg-white py-1 mt-4 rounded-lg shadow-md">
+
+                <!-- poster info start -->
+                <div class="flex items-center justify-between px-4 py-2">
+                    
+                    <div class="flex items-center space-x-2">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/elizabeth.a7d537b9.jpg" alt="user profile photo" class="w-10 rounded-full"></a>
+                        <div>
+                            <h4 class="font-semibold hover:underline"><a href="">Elizabeth Olsen</a></h4>
+                            <p class="text-sm text-gray-600">5 h &bull; <i class="fa-solid fa-earth-asia"></i></p>
+                        </div>
+                    </div>
+    
+                    <a href="" class="text-gray-500 text-xl flex items-center justify-center w-9 h-9 rounded-full hover:bg-gray-200">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </a>
+
+                </div>
+                <!-- poster info ends -->
+
+                <!-- actual post starts -->
+                <div class="px-4">
+                    <p>Im'ma Slayyyyyyy !!</p>
+                    <img src="assets/images/elizabeth-2.cd4d59f1.jpg" alt="post image" class="w-full mt-2">
+                </div>
+                <!-- actual post ends -->
+
+                <!-- post engagement info starts -->
+                <div class="flex justify-between items-center px-4 py-2 text-gray-500">
+                    <div>
+                        <a href="" class="text-blue-500 text-lg"><i class="fa-solid fa-thumbs-up"></i></a>
+                        <a href="" class="hover:underline">4.2k</a>
+                    </div>
+
+                    <div>
+                        <a href="" class="hover:underline">202 comments</a>
+                        <a href="" class="hover:underline">78 shares</a>
+                    </div>
+                </div>
+                <!-- post engagement info ends -->
+
+                <!-- post engagement buttons start -->
+                <div>
+                    <ul class="text-center flex py-1 px-4 border-y">
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="likebtn text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-thumbs-up mr-2 text-xl"></i>Like</a>
+                        </li>
+                        
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-message mr-2 text-xl"></i>Comment</a>
+                        </li>
+    
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-share-from-square mr-2 text-xl"></i>Share</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- post engagement buttons end-- -->
+
+                <!-- comment writing on post block start -->
+                <div class="px-4">
+                    <div class="flex items-center space-x-2 my-3">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-8 rounded-full"></a>
+                        <div class="bg-gray-200 text-gray-600 py-1 px-3 rounded-full w-full flex items-center">
+                            <input type="text" name="" id="" placeholder="Write a comment..." class="w-full bg-transparent outline-none placeholder:text-gray-600">
+                            <div class="flex-shrink-0">
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-user-ninja"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-face-smile"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-camera"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-robot"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-ghost"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- comment writing on post block ends -->
+
+            </div>
+            <!-- post block end -->
+
+            <!-- post block start -->
+            <div class="bg-white py-1 mt-4 rounded-lg shadow-md">
+
+                <!-- poster info start -->
+                <div class="flex items-center justify-between px-4 py-2">
+                    
+                    <div class="flex items-center space-x-2">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/antony.4aed527a.jpg" alt="post image" class="w-10 rounded-full"></a>
+                        <div>
+                            <h4 class="font-semibold hover:underline"><a href="">Antony Starr</a></h4>
+                            <p class="text-sm text-gray-600">7 h &bull; <i class="fa-solid fa-earth-asia"></i></p>
+                        </div>
+                    </div>
+    
+                    <a href="" class="text-gray-500 text-xl flex items-center justify-center w-9 h-9 rounded-full hover:bg-gray-200">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </a>
+
+                </div>
+                <!-- poster info ends -->
+
+                <!-- actual post starts -->
+                <div class="px-4">
+                    <p>Your Saviour Is Here. I am THE HOMELANDER!!</p>
+                    <img src="assets/images/homelander.bf351b6e.jpg" alt="post image" class="w-full mt-2">
+                </div>
+                <!-- actual post ends -->
+
+                <!-- post engagement info starts -->
+                <div class="flex justify-between items-center px-4 py-2 text-gray-500">
+                    <div>
+                        <a href="" class="text-blue-500 text-lg"><i class="fa-solid fa-thumbs-up"></i></a>
+                        <a href="" class="hover:underline">4.2k</a>
+                    </div>
+
+                    <div>
+                        <a href="" class="hover:underline">202 comments</a>
+                        <a href="" class="hover:underline">78 shares</a>
+                    </div>
+                </div>
+                <!-- post engagement info ends -->
+
+                <!-- post engagement buttons start -->
+                <div>
+                    <ul class="text-center flex py-1 px-4 border-y">
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="likebtn text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-thumbs-up mr-2 text-xl"></i>Like</a>
+                        </li>
+                        
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-message mr-2 text-xl"></i>Comment</a>
+                        </li>
+    
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-share-from-square mr-2 text-xl"></i>Share</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- post engagement buttons end-- -->
+
+                <!-- comment writing on post block start -->
+                <div class="px-4">
+                    <div class="flex items-center space-x-2 my-3">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-8 rounded-full"></a>
+                        <div class="bg-gray-200 text-gray-600 py-1 px-3 rounded-full w-full flex items-center">
+                            <input type="text" name="" id="" placeholder="Write a comment..." class="w-full bg-transparent outline-none placeholder:text-gray-600">
+                            <div class="flex-shrink-0">
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-user-ninja"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-face-smile"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-camera"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-robot"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-ghost"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- comment writing on post block ends -->
+
+            </div>
+            <!-- post block end -->
+
+            <!-- post block start -->
+            <div class="bg-white py-1 mt-4 rounded-lg shadow-md">
+
+                <!-- poster info start -->
+                <div class="flex items-center justify-between px-4 py-2">
+                    
+                    <div class="flex items-center space-x-2">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-10 rounded-full"></a>
+                        <div>
+                            <h4 class="font-semibold hover:underline"><a href="">Hardick Raj</a></h4>
+                            <p class="text-sm text-gray-600">5 h &bull; <i class="fa-solid fa-earth-asia"></i></p>
+                        </div>
+                    </div>
+    
+                    <a href="" class="text-gray-500 text-xl flex items-center justify-center w-9 h-9 rounded-full hover:bg-gray-200">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </a>
+
+                </div>
+                <!-- poster info ends -->
+
+                <!-- actual post starts -->
+                <div class="px-4">
+                    <p>Aaahh Yessss!! I finally made it.
+                        <i>I'm The Real Slim Shady</i> 😎
+                    </p>
+                </div>
+                <!-- actual post ends -->
+
+                <!-- post engagement info starts -->
+                <div class="flex justify-between items-center px-4 py-2 text-gray-500">
+                    <div>
+                        <a href="" class="text-blue-500 text-lg"><i class="fa-solid fa-thumbs-up"></i></a>
+                        <a href="" class="hover:underline">4.2k</a>
+                    </div>
+
+                    <div>
+                        <a href="" class="hover:underline">202 comments</a>
+                        <a href="" class="hover:underline">78 shares</a>
+                    </div>
+                </div>
+                <!-- post engagement info ends -->
+
+                <!-- post engagement buttons start -->
+                <div>
+                    <ul class="text-center flex py-1 px-4 border-y">
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="likebtn text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-thumbs-up mr-2 text-xl"></i>Like</a>
+                        </li>
+                        
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-message mr-2 text-xl"></i>Comment</a>
+                        </li>
+    
+                        <li class="inline-block w-1/3">
+                            <a href="#" class="text-gray-500 text-center font-medium w-full py-1 rounded-md flex items-center justify-center hover:bg-gray-200"><i class="fa-regular fa-share-from-square mr-2 text-xl"></i>Share</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- post engagement buttons end-- -->
+
+                <!-- comment writing on post block start -->
+                <div class="px-4">
+                    <div class="flex items-center space-x-2 my-3">
+                        <a href="" class="hover:brightness-95 flex-shrink-0"><img src="assets/images/profile-photo.86a7b12a.jpg" alt="profile photo" class="w-8 rounded-full"></a>
+                        <div class="bg-gray-200 text-gray-600 py-1 px-3 rounded-full w-full flex items-center">
+                            <input type="text" name="" id="" placeholder="Write a comment..." class="w-full bg-transparent outline-none placeholder:text-gray-600">
+                            <div class="flex-shrink-0">
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-user-ninja"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-face-smile"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-camera"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-robot"></i></button>
+                                <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-ghost"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- comment writing on post block ends -->
+
+            </div>
+            <!-- post block end -->
+
+        </div>
+        <!-- feed end -->
+
+        <!-- right sidebar starts -->
+        <div id="sidebar" class="hidden md:block max-w-[360px] min-w-[280px] flex-shrink flex-grow pt-20 overflow-hidden">
+
+            <!-- friend request section start -->
+            <div id="friendrequest" class="">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-semibold text-lg text-gray-500 ml-2">Friend Requests</h2>
+                    <a href="" class="text-blue-400 px-2 py-2 rounded hover:bg-gray-300">See all</a>
+                </div>
+
+                <ul class="">
+
+                    <li><a href="" class="flex items-center px-2 py-2 space-x-3 hover:bg-gray-300 rounded-lg">
+                        <img src="assets/images/einstein.9691e109.jpg" alt="user profile photo" class="w-16 h-16 rounded-full flex-shrink-0">
+                        <div class="w-full space-y-2">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-medium text-gray-700">Albert Einstein</h4>
+                                <p class="text-sm text-blue-500">6 h <i class="fa-solid fa-circle text-[8px] "></i></p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <button class="w-1/2 text-center py-1 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600">Confirm</button>
+                                <button class="w-1/2 text-center py-1 bg-gray-300 font-medium rounded-md hover:bg-gray-400">Delete</button>
+                            </div>
+                        </div>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center px-2 py-2 space-x-3 hover:bg-gray-300 rounded-lg">
+                        <img src="assets/images/zuck.02474dc4.jpg" alt="user profile photo" class="w-16 h-16 rounded-full flex-shrink-0">
+                        <div class="w-full space-y-2">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-medium text-gray-700">Mark Zuckerburg</h4>
+                                <p class="text-sm text-blue-500">6 h <i class="fa-solid fa-circle text-[8px] "></i></p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <button class="w-1/2 text-center py-1 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600">Confirm</button>
+                                <button class="w-1/2 text-center py-1 bg-gray-300 font-medium rounded-md hover:bg-gray-400">Delete</button>
+                            </div>
+                        </div>
+                    </a></li>
+
+                </ul>
+            </div>
+            <!-- friend request section ends -->
+
+            <!-- contacts section starts -->
+            <div class="pt-2 mt-3 border-t border-gray-400">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-semibold text-lg text-gray-500 ml-2">Contacts</h2>
+                    <div class="flex-shrink-0">
+                        <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-video"></i></button>
+                        <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="text-sm text-gray-500 w-7 h-7 rounded-full hover:bg-gray-300"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/charlie.ca5596c4.jpeg" alt="user profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Charlie Cox</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/rdj.406396a9.jpg" alt="user profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Robert Downey Jr</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/benedict.b2c5e1c2.jpg" alt="user profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Benedict Cumberbach</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/emma.82153d69.jpg" alt="user profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Emma Watson</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/elizabeth.a7d537b9.jpg" alt="user profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Elizabeth Olsen</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/elon.9c42c826.jpg" alt="user profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Elon Musk</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/krysten.29ab3e93.jpg" alt="user profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Krysten Ritter</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/jeff.3975c22f.jpg" alt="user profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Jeff Bezos</h4>
+                    </a></li>
+
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <img src="assets/images/tara.1988535e.jpg" alt="user profile photo" class="rounded-full w-9">
+                        <h4 class="font-medium">Tara Sutaria</h4>
+                    </a></li>
+
+                </ul>
+            </div>
+            <!-- contacts section ends -->
+            
+            <!-- group conversation start -->
+            <div class="pt-2 mt-3 border-t border-gray-400">
+                <h2 class="font-semibold text-lg text-gray-500 ml-2">Group conversations</h2>
+
+                <ul>
+                    <li><a href="" class="flex items-center justify-start space-x-3 py-2 px-2 rounded-md hover:bg-gray-300">
+                        <div class=" bg-gray-300 flex items-center justify-center w-9 h-9 rounded-full"><i class="fa-solid fa-plus"></i></div>
+                        <h4 class="font-medium">Create new Group</h4>
+                    </a></li>
+                </ul>
+            </div>
+            <!-- group conversation ends -->
+
+        </div>
+        <!-- right sidebar ends -->
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
